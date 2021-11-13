@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notion Stock Widget</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="dark">
+  <!-- Light/Dark Btn -->
+  <div class="settings">
+    <div class="modes">
+      <button class="light">Light</button>
+      <button class="dark">Dark</button>
+    </div>
+  </div>
+  <!-- TradingView Widget BEGIN -->
+  <div class="tradingview-widget-container">
+    <div id="tradingview_1c42c"></div>
+    <div class="tradingview-widget-copyright"><a href="https://cn.tradingview.com/symbols/ETHUSDT/?exchange=HUOBI"
+        rel="noopener" target="_blank"><span class="blue-text">ETHUSDT图表</span></a>由TradingView提供</div>
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    <script type="text/javascript">
+      new TradingView.widget(
+        {
+          "width": 800,
+          "height": 600,
+          "symbol": "HUOBI:ETHUSDT",
+          "interval": "D",
+          "timezone": "Asia/Shanghai",
+          "theme": "light",
+          "style": "1",
+          "locale": "zh_CN",
+          "toolbar_bg": "#f1f3f6",
+          "enable_publishing": false,
+          "allow_symbol_change": true,
+          "details": true,
+          "show_popup_button": true,
+          "popup_width": "1000",
+          "popup_height": "650",
+          "container_id": "tradingview_1c42c"
+        }
+      );
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+  <!-- TradingView Widget BEGIN -->
+  <div class="tradingview-widget-container">
+    <div id="tradingview_14a34"></div>
+    <div class="tradingview-widget-copyright"><a href="https://cn.tradingview.com/symbols/ETHUSDT/?exchange=HUOBI"
+        rel="noopener" target="_blank"><span class="blue-text">ETHUSDT图表</span></a>由TradingView提供</div>
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    <script type="text/javascript">
+      new TradingView.widget(
+        {
+          "width": 800,
+          "height": 600,
+          "symbol": "HUOBI:ETHUSDT",
+          "interval": "D",
+          "timezone": "Asia/Shanghai",
+          "theme": "dark",
+          "style": "1",
+          "locale": "zh_CN",
+          "toolbar_bg": "#f1f3f6",
+          "enable_publishing": false,
+          "allow_symbol_change": true,
+          "details": true,
+          "show_popup_button": true,
+          "popup_width": "1000",
+          "popup_height": "650",
+          "container_id": "tradingview_14a34"
+        }
+      );
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+  <!-- Custom JS for widget styling BEGIN -->
+  <script src="app.js"></script>
+  <!-- Custom JS END -->
+</body>
+
+</html>
